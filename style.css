@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 80rem;
+    margin: 0 4rem 0 4rem;
+    display:flex;
+    flex-direction: column;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(/Roboto/Roboto-Light.ttf);
+    font-family: Raleway;
+    src: url(/Raleway/Raleway-VariableFont_wght.ttf);
+    font-family: Advent-Pro;
+    src: url(/Advent_Pro/AdventPro-Bold.ttf);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    padding: 0.2rem;
+    background-color: white;
+    height: 4rem;
+}
+
+#logo {
+    font-family: 'Advent-Pro';
+    font-size: 2.2rem;
+    color: #F59338;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.menu {
+    margin-top: 1rem;
+}
+nav a {
+    color: #F59338;
+    text-decoration: none;
+    font-family: 'Advent-Pro';
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    padding: 0.5rem;
+    /* border: 1px solid white; */
+    border-radius: 0.4rem;
+    transition: background-color, color 0.5s;
+}
+
+nav a:hover {
+    background-color: #F59338;
+    color: white;
+}
