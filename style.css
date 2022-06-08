@@ -1,3 +1,5 @@
+/* @import url("bootstrap.min.css"); */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +8,12 @@
     --orange:#F59338;
     --blue: #21A0AA;
     --grey: #565656;
+    --background: #F0F0F0;
 }
 body {
     max-width: 80rem;
     margin: 0 4rem;
-    background-color: #F0F0F0;
+    background-color: var(--background);
     /* display:flex;
     flex-direction: column; */
 }
@@ -23,7 +26,7 @@ body {
     src: url(/Advent_Pro/AdventPro-Bold.ttf);
 }
 
-h1, h5, p {
+h1, h3, h5, h4, p, .btn-secondary {
     color: var(--grey);
     font-family: 'Roboto-Light';
 }
@@ -80,7 +83,7 @@ nav a:hover {
 }
 
 #marketplace {
-    color: var(--blue);
+    color: var(--blue)
 }
 
 .orange-text {
@@ -115,5 +118,51 @@ nav a:hover {
     font-size: 1.3rem;
     color: var(--grey);
     font-family: 'Roboto-Light';
+}
+
+/* page 2 */
+
+.secondary-nav {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;    
+    font-size: 2rem;
+}
+
+.btn {
+    background-color: var(--background);
+    border: none;
+    color: var(--grey);
+    font-family: 'Roboto-Light';
+    font-size: 1.5rem;
+}
+
+.btn:hover {
+    background-color: var(--blue);
+}
+
+/* need to get onclick - border out using js */
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+}
+.main-container {
+
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 12%;
+}
+
+.card-img-top {
+margin:2rem auto;
+width: 80%;
 }
 
