@@ -10,10 +10,11 @@
     --grey: #565656;
     --background: #F0F0F0;
 }
+
 body {
-    max-width: 80rem;
     margin: 0 4rem;
     background-color: var(--background);
+    /* height: 5000px; */
     /* display:flex;
     flex-direction: column; */
 }
@@ -40,6 +41,7 @@ nav {
     font-family: 'Advent-Pro';
     font-weight: bold;
     margin-top: 1rem;
+    background-color: var(--background) ;
 }
 
 #logo {
@@ -66,7 +68,12 @@ nav a:hover {
 .container {
     margin-top: 2.5rem;
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
+}
+
+.left-side {
+    max-width: 50%;
 }
 
 .left-side h1, h5 {
@@ -74,20 +81,28 @@ nav a:hover {
     margin-bottom: 2rem;
 }
 
-.left-side h1 {
+h1 {
     font-size: 4rem;
 }
 
-.left-side h5 {
+h5 {
     font-size: 2rem;
 }
 
-#marketplace {
-    color: var(--blue)
+.right-side {
+    max-width: 50%;
+    /* margin-top: -3.75rem;
+    margin-left: 18rem;*/
+} 
+
+.blue-text {
+    color: var(--blue);
+    font-weight: bold;
 }
 
 .orange-text {
     color: var(--orange);
+    font-weight: bold;
 }
 
 .search-bar {
@@ -123,7 +138,7 @@ nav a:hover {
 /* page 2 */
 
 .secondary-nav {
-    position: relative;
+    /* position: relative; */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -148,9 +163,7 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
 }
-.main-container {
 
-}
 .card-container {
     display: grid;
     grid-template-columns: repeat(3, minmax(auto, 1fr));
@@ -159,6 +172,7 @@ nav a:hover {
 
 .card {
     border-radius: 12%;
+    width: 400px;
 }
 
 .card-img-top {
@@ -166,3 +180,85 @@ margin:2rem auto;
 width: 80%;
 }
 
+/* .tutor-container {
+    
+} */
+
+.tutor-header {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* margin: 0 3rem; */
+}
+
+.tutor-profile-image img {
+    max-width: 25rem;
+    max-height: 25rem;
+    margin: 3rem;
+}
+
+.tutor-bio {
+    margin: auto;
+}
+
+hr {
+    border: 1px solid #21A0AA;
+}
+
+.top-reviews {
+    background-color: white;
+    height: 300px;
+}
+
+.about-me {
+    background-color: white;
+    height: 300px;
+}
+
+@media (max-width: 700px) {
+    nav {
+        width: 100%;
+        background-color: var(--background);
+        position: sticky;
+        top: 0;
+        margin: 1rem;
+    }
+
+    body {
+        margin: 0;
+        padding: 0%;
+    }
+    .container {
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .left-side, .left-side h5 {
+        margin: 1rem 0;
+        width: 100%;
+    }
+    .right-side {
+      visibility: hidden;
+    }
+
+    .card-container {
+        margin: 1rem auto;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(auto, 1fr));
+        gap: 1rem;
+    }
+
+    .secondary-nav {
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+        top: 2rem;
+        font-size: 2rem;
+        margin: 1rem;
+}
+
+.card {
+    grid-column: span 1;
+}
+
+}
