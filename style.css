@@ -195,10 +195,8 @@ width: 80%;
     margin: 3rem;
 }
 
-/* Popup container - can be anything you want */
+/* Popup container */
 .popup {
-    /* position: relative; */
-    /* display: inline-block; */
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -210,32 +208,42 @@ width: 80%;
   .popup .popuptext {
     visibility: hidden;
     position:absolute;
-    top: 22%; /* adjusts position of popup on page */
-    left: 10%;
-    width: 80rem;
-    z-index: 1;
     display: flex;
   }
 
   /* designs the pop-up box */
 .tutor-container {
     background-color: white;
-    /* position: fixed; */
-    /* top:20%; adjusts position of popup on page
-    left:-40%;
-        width:35rem;  /* adjust as per your needs
-        height: 100%;   /* adjust as per your needs
-        margin-left:-200px;   /* negative half of width above
-        margin-top:-200px;   /* negative half of height above 
-        z-index: 1; */
+    width: 80rem;
     }
     
    
   /* Toggle this class - hide and show the popup */
   .popup .show {
     visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
+    position:fixed;
+    display: flex;
+    top: 50%; /*50% of the entire screen */
+    left: 50%;
+    transform: translate(-50%, -50%); /*centers the popup. 50% of container rather than screen */
+    z-index: 1;
+  }
+
+  /*this will grey out the background behind the popup */
+  #overlay {
+    position: fixed; /*we want it to follow us around the screen */
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--grey);
+    pointer-events: none; /*makes it so the overlay won't block our click events */
+  }
+
+  #overlay.active {
+    opacity: 60%;
+    pointer-events: all;
   }
   
   
