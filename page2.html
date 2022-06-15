@@ -53,60 +53,77 @@
           </div>
             <div class="main-container container">
               <div class="card-container">
-                <div class="card">
+                <!--  -->
+                <div class="card" onclick="myFunction()">
                     <img class="card-img-top" src="images/Teacher 1.png" alt="Card image" >
                     <div class="card-body">
                       <h4 class="card-title">John Doe</h4>
                       <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                      <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+                      <!-- <a href="#" class="btn btn-primary stretched-link">See Profile</a> -->
                     </div>
-                  </div>
-                  <div class="card">
+                    </div>
+                  <div class="card" onclick="myFunction()">
+                    <img class="card-img-top" src="images/Teacher 1.png" alt="Card image"/>
+                    <div class="card-body">
+                      <h4 class="card-title">John Doe</h4>
+                      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                      <!-- <a href="#" class="btn btn-primary stretched-link">See Profile</a> -->
+                      
+                  </div> <!-- closing .card-body-->
+                </div> <!-- closing .card-->
+                  <div class="card" onclick="myFunction()">
                     <img class="card-img-top" src="images/Teacher 1.png" alt="Card image">
                     <div class="card-body">
                       <h4 class="card-title">John Doe</h4>
                       <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                      <a href="#" class="btn btn-primary stretched-link">See Profile</a>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <img class="card-img-top" src="images/Teacher 1.png" alt="Card image">
-                    <div class="card-body">
-                      <h4 class="card-title">John Doe</h4>
-                      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                      <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+                      <!-- <a href="#" class="btn btn-primary stretched-link">See Profile</a> -->
                     </div>
                   </div> 
-                  <div class="card">
+                  <div class="card" onclick="myFunction()">
                     <img class="card-img-top" src="images/Teacher 2.png" alt="Card image">
                     <div class="card-body">
                       <h4 class="card-title">John Doe</h4>
                       <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                      <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+                      <!-- <a href="#" class="btn btn-primary stretched-link">See Profile</a> -->
                     </div>
                   </div>
-                  <div class="card">
+                  <div class="card" onclick="myFunction()">
                     <img class="card-img-top" src="images/Teacher 3.png" alt="Card image">
                     <div class="card-body">
                       <h4 class="card-title">John Doe</h4>
                       <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                      <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+                      <!-- <a href="#" class="btn btn-primary stretched-link">See Profile</a> -->
                     </div>
                   </div>
-                  <div class="card">
+                  <div class="card" onclick="myFunction()">
                     <img class="card-img-top" src="images/Teacher 3.png" alt="Card image" >
                     <div class="card-body">
                       <h4 class="card-title">John Doe</h4>
                       <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                      <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+                      <!-- <a href="#" class="btn btn-primary stretched-link">See Profile</a> -->
                       <!--end bootstrap-->
                     </div>
                   </div>
-                </div>
-            </div>
-            </main>
-            <!-- JavaScript Bundle with Popper -->
-            <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
-            <!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> -->
+                  <div class="popup"><span class="popuptext" id="myPopup">
+                    <div class="tutor-container">
+                    <div class="tutor-header"> <!-- flexbox-->
+                      <div class="tutor-profile-image">
+                          <img src="/images/Teacher 1.png" alt="tutor profile picture">
+                      </div> <!-- closing .tutor-profile-image-->
+                      <div class="tutor-description">
+                        <h1 id="tutor-name">John Doe</h1><hr><br>
+                        <h5>Certified teacher with 5+ years of experience</h5><br>
+                        <h5><span class="blue-text">Teaches: </span><span id="subject">Photography</span></h5>
+                        <h5><span class="blue-text">Speaks: </span><span id="language-1">English</span>, <span id="language-2">Portuguese</span></h5>
+                      </div>
+                    </div>
+                    <div class="top-reviews">Top top-reviews</div>
+                    <div class="about-me">About-me</div>                        
+                  </div> <!--closing tutor container-->
+                  </span>
+                </div> <!-- closing .popup function--> 
+              </div>
+    </main>
+    <script src="index.js"></script>
 </body>
 </html>

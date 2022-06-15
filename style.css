@@ -42,6 +42,7 @@ nav {
     font-weight: bold;
     margin-top: 1rem;
     background-color: var(--background) ;
+    z-index: 2;
 }
 
 #logo {
@@ -173,6 +174,7 @@ h5 {
 .card {
     border-radius: 12%;
     width: 400px;
+    cursor: pointer;
 }
 
 .card-img-top {
@@ -180,43 +182,65 @@ margin:2rem auto;
 width: 80%;
 }
 
-/* .tutor-container {
-    
-} */
-
-.tutor-header {
-    background-color: white;
+.tutor-header { 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* margin: 0 3rem; */
+    margin: 0 2rem;
 }
 
-.tutor-profile-image img {
+.tutor-profile-image > img {
     max-width: 25rem;
     max-height: 25rem;
     margin: 3rem;
 }
 
-.tutor-bio {
-    margin: auto;
-}
+/* Popup container - can be anything you want */
+.popup {
+    /* position: relative; */
+    /* display: inline-block; */
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    position:absolute;
+    top: 22%; /* adjusts position of popup on page */
+    left: 10%;
+    width: 80rem;
+    z-index: 1;
+    display: flex;
+  }
 
-hr {
-    border: 1px solid #21A0AA;
-}
-
-.top-reviews {
+  /* designs the pop-up box */
+.tutor-container {
     background-color: white;
-    height: 300px;
-}
-
-.about-me {
-    background-color: white;
-    height: 300px;
-}
-
-@media (max-width: 700px) {
+    /* position: fixed; */
+    /* top:20%; adjusts position of popup on page
+    left:-40%;
+        width:35rem;  /* adjust as per your needs
+        height: 100%;   /* adjust as per your needs
+        margin-left:-200px;   /* negative half of width above
+        margin-top:-200px;   /* negative half of height above 
+        z-index: 1; */
+    }
+    
+   
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  
+/* media queries for responsive */
+/* @media (max-width: 700px) {
     nav {
         width: 100%;
         background-color: var(--background);
@@ -261,4 +285,4 @@ hr {
     grid-column: span 1;
 }
 
-}
+} */
