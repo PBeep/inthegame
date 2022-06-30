@@ -1,0 +1,1 @@
+Hey Costa, i need a logo and the new name of the website. Also I would need to see the full new site to be able to understand the color scheme - i'm going by memory here.

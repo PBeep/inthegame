@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange:#F59338;
+    --blue: #21A0AA;
+    --grey: #565656;
+    --background: #F0F0F0;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Light.ttf);
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: var(--orange);
+}
+/* 
+.inner-footer {
+    display: flex;
+} */
+
+#brand-name {
+    font-family: 'Roboto';
+    font-size: 40px;
+    color: var(--grey);
+    letter-spacing: 0.6px;
+    margin: 20px;
+}
+
+#about-us {
+    font-family: 'Roboto';
+    font-size: 28px;
+    color: #565656;
+}
+
+#fontawesome li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 15px;
+    font-size: 25px;
+}
+
+#contact-us span a:link {
+    color: var(--blue);
+    font-family: 'Roboto';
+    font-size: 22px;
+    padding: 10px;
+}
+
+#contact-us span a:visited {
+    color: var(--grey);
+    font-family: 'Roboto';
+}
+.colour {
+    color: var(--blue)
+}
+
+
+@media(max-width: 600px){
+ footer .inner-footer {
+    width: 90%;
+    margin: 30px;
+    font-size: 50%;
+ }
+}
+    
+
+
